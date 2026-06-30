@@ -1,3 +1,4 @@
+import os
 import mysql.connector
 from mysql.connector import pooling
 
@@ -6,16 +7,17 @@ class Database:
     """
     Gestiona un pool de conexiones persistentes hacia MySQL 8.0+
     usando mysql-connector-python.
+    Lee credenciales desde variables de entorno (.env)
     """
     _pool = None
 
     _CONFIG = {
         "pool_name": "movishare_pool",
         "pool_size": 5,
-        "host": "localhost",
-        "database": "movishare_db",
-        "user": "root",
-        "password": "Lacontraes132",
+        "host": os.getenv("DB_HOST", "localhost"),
+        "database": os.getenv("DB_NAME", "movishare_db"),
+        "user": os.getenv("DB_USER", "root"),
+        "password": os.getenv("DB_PASSWORD", ""),
         "charset": "utf8mb4",
         "collation": "utf8mb4_general_ci",
         "autocommit": False

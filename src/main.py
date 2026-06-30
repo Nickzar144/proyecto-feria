@@ -1,6 +1,11 @@
 import sys
 import os
 
+# Cargar variables de entorno desde .env (ubicado en la raíz del proyecto)
+from dotenv import load_dotenv
+_PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+load_dotenv(os.path.join(_PROJECT_DIR, ".env"))
+
 # Asegurar que el directorio src/ esté en sys.path para importaciones absolutas planas
 _SRC_DIR = os.path.dirname(os.path.abspath(__file__))
 if _SRC_DIR not in sys.path:
