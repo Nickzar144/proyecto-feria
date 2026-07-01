@@ -98,7 +98,7 @@ class ClientesView(ctk.CTkFrame):
         self.frame_table = ctk.CTkFrame(self)
         self.frame_table.grid(row=0, column=1, sticky="nsew", padx=(0, 10), pady=10)
         self.frame_table.grid_columnconfigure(0, weight=1)
-        self.frame_table.grid_rowconfigure(1, weight=1)
+        self.frame_table.grid_rowconfigure(2, weight=1)
 
         ctk.CTkLabel(
             self.frame_table,

@@ -124,7 +124,7 @@ class FlotaView(ctk.CTkFrame):
         self.frame_v_table = ctk.CTkFrame(self.tab_vehiculos)
         self.frame_v_table.grid(row=0, column=1, sticky="nsew", padx=(0, 10), pady=10)
         self.frame_v_table.grid_columnconfigure(0, weight=1)
-        self.frame_v_table.grid_rowconfigure(1, weight=1)
+        self.frame_v_table.grid_rowconfigure(2, weight=1)
 
         ctk.CTkLabel(
             self.frame_v_table,
@@ -316,7 +316,7 @@ class FlotaView(ctk.CTkFrame):
         self.frame_m_table = ctk.CTkFrame(self.tab_mantenimiento)
         self.frame_m_table.grid(row=0, column=1, sticky="nsew", padx=(0, 10), pady=10)
         self.frame_m_table.grid_columnconfigure(0, weight=1)
-        self.frame_m_table.grid_rowconfigure(1, weight=1)
+        self.frame_m_table.grid_rowconfigure(2, weight=1)
 
         ctk.CTkLabel(
             self.frame_m_table,

@@ -126,7 +126,7 @@ class ReservasView(ctk.CTkFrame):
         self.frame_r_table = ctk.CTkFrame(self.tab_reservas)
         self.frame_r_table.grid(row=0, column=1, sticky="nsew", padx=(0, 10), pady=10)
         self.frame_r_table.grid_columnconfigure(0, weight=1)
-        self.frame_r_table.grid_rowconfigure(1, weight=1)
+        self.frame_r_table.grid_rowconfigure(2, weight=1)
 
         ctk.CTkLabel(
             self.frame_r_table, text="Listado de Reservas",
@@ -208,7 +208,7 @@ class ReservasView(ctk.CTkFrame):
         self.frame_p_table = ctk.CTkFrame(self.tab_pagos)
         self.frame_p_table.grid(row=0, column=1, sticky="nsew", padx=(0, 10), pady=10)
         self.frame_p_table.grid_columnconfigure(0, weight=1)
-        self.frame_p_table.grid_rowconfigure(1, weight=1)
+        self.frame_p_table.grid_rowconfigure(2, weight=1)
 
         ctk.CTkLabel(
             self.frame_p_table, text="Historial de Pagos",
