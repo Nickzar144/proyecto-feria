@@ -1,9 +1,4 @@
--- ============================================================
--- MOVISHARE - Datos iniciales ejecutados en la base de datos
--- Este script contiene EXACTAMENTE los INSERTs que fueron
--- aplicados a la base de datos movishare_db.
--- ============================================================
-
+-- INSERTS DE LA BASE DE DATOS
 USE movishare_db;
 
 -- ============================================================

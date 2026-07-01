@@ -1,8 +1,3 @@
--- ============================================================
--- MOVISHARE - Esquema de Base de Datos MySQL 8.0+
--- Sistema de Gestión de Alquiler de Vehículos
--- ============================================================
-
 DROP DATABASE IF EXISTS movishare_db;
 CREATE DATABASE movishare_db
     CHARACTER SET utf8mb4
@@ -201,8 +196,7 @@ VALUES (1, 'admin', '$2b$12$ug3l6wqJ9eWRV3kgAMGkS.e4k.uJntBGfWp/oCd6z9U3vWhav2ou
 
 -- ============================================================
 -- 9. DATOS DE DEMOSTRACIÓN OPCIONALES
--- Descomenta las líneas siguientes si deseas tener registros
--- de prueba desde el primer inicio.
+
 -- ============================================================
 
 -- Cliente de prueba
