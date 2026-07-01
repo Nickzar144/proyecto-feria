@@ -14,7 +14,8 @@ class ClientesView(ctk.CTkFrame):
         self.controller = ClienteController()
 
         self.configure(fg_color="transparent")
-        self.grid_columnconfigure(0, weight=1)
+        self.grid_columnconfigure(0, weight=0)   # formulario: ancho fijo
+        self.grid_columnconfigure(1, weight=1)   # tabla: se expande horizontalmente
         self.grid_rowconfigure(0, weight=1)
 
         # ── Formulario (izquierda) ──
