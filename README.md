@@ -89,7 +89,7 @@ DB_PASSWORD=tu_contraseña_mysql
 DB_NAME=movishare_db
 ```
 
-> ⚠️ **IMPORTANTE:** Este archivo ya está en `.gitignore` y no se sube a GitHub por seguridad.
+>  **IMPORTANTE:** Este archivo ya está en `.gitignore` y no se sube a GitHub por seguridad.
 
 ### 4. Crear la Base de Datos y Datos
 
@@ -198,7 +198,7 @@ python src/main.py
 
 ---
 
-## Notas para Revisión
+## Notas
 
 - El sistema fue probado en **Windows 11** con **Python 3.13** y **MySQL 8.0**.
 - Todas las transacciones de inserción en cascada (cliente→licencia, reserva→vehículo→pago) usan `BEGIN / COMMIT / ROLLBACK` manual para garantizar integridad referencial.
@@ -206,6 +206,3 @@ python src/main.py
 
 ---
 
-## Autor
-
-Desarrollado como proyecto académico para el sistema **MOVISHARE** de gestión de alquiler de vehículos.
